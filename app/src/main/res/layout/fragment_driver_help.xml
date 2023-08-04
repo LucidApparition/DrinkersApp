@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverHelpFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDriverAccountDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/accent"
+                android:text="Account Details"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                />
+
+            <Button
+                android:id="@+id/btnContactSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Contact Support"
+                android:textSize="20sp"
+                android:layout_below="@id/txtDriverAccountDetails"
+                android:layout_marginTop="40dp"
+                />
+
+            <Button
+                android:id="@+id/btnContactCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Contact Customer"
+                android:textSize="20sp"
+                android:layout_below="@id/btnContactSupport"
+                android:layout_marginTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/btnContactStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Contact Store"
+                android:textSize="20sp"
+                android:layout_below="@id/btnContactCustomer"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/txtReturnToStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Return to Store"
+                android:textSize="25sp"
+                android:layout_below="@id/btnContactStore"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/txtProfits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Profits"
+                android:textSize="25sp"
+                android:layout_below="@id/txtReturnToStore"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/txtReportProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Report a Problem"
+                android:textSize="25sp"
+                android:layout_below="@id/txtProfits"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/txtTakeBreak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Take a Break"
+                android:textSize="25sp"
+                android:layout_below="@id/txtReportProblem"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/txtDoneForDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Done for the day"
+                android:textSize="25sp"
+                android:layout_below="@id/txtTakeBreak"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/txtEmergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Emergency"
+                android:textSize="25sp"
+                android:layout_below="@id/txtDoneForDay"
+                android:layout_marginTop="20dp"
+                />
+            <Button
+                android:id="@+id/buttonLogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Log Out"
+                android:textColor="@color/red"
+                android:onClick="activity_main"
+                android:textSize="15sp"
+                android:layout_below="@id/txtEmergency"
+                android:layout_marginTop="29dp"
+                />
+    </RelativeLayout>
+</ScrollView>

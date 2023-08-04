@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerCheckoutPage">
+
+    <TextView
+        android:id="@+id/txtCheckoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Checkout"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtItemsInYourCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCheckoutTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Your Cart"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyItemsInCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtItemsInYourCart"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/txtTipMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rcyItemsInCart"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Your tips help our drivers arrive in a fast, timely manner. Thank you."
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayoutBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTipMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn5Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary"
+            android:text="5%"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn10Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn5Percent"
+            android:backgroundTint="@color/primary"
+            android:text="10%"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn15Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn10Percent"
+            android:backgroundTint="@color/primary"
+            android:text="15%"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn20Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn15Percent"
+            android:backgroundTint="@color/primary"
+            android:text="20%"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayoutCheckoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/InnerRelativeLayoutBtns"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:id="@+id/txtTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:text="Tip"
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtTipCalculated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:text="Tip"
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTip"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:text="Tax"
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtTaxCalculated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTip"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:text="Tax"
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTax"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:text="Total"
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtTotalCalculated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTax"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:text="Total"
+            android:textColor="@color/neutralDark" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/InnerRelativeLayoutCheckoutDetails"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/accent"
+        android:text="Checkout" />
+
+</RelativeLayout>

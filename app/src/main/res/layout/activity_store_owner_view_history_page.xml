@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreOwnerViewHistoryPage">
+
+    <TextView
+        android:id="@+id/txtViewingAPastOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Viewing a Past Order"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnBackToHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewingAPastOrder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/primary"
+        android:padding="10dp"
+        android:text="Back to all orders"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtOrderDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBackToHistory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Order Details"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayoutOrderDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrderDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:text="Customer Name:"
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtCustomerNamePlaceholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txtCustomerName"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/customer_name"
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtOrderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCustomerName"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:text="Order Number: "
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtOrderNumberPlaceholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCustomerName"
+            android:layout_toEndOf="@+id/txtOrderNumber"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/order_number"
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtPickedUpBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtOrderNumber"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:text="Picked up by: "
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtPickedUpByPlaceholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtOrderNumber"
+            android:layout_toEndOf="@+id/txtPickedUpBy"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/driver_name"
+            android:textColor="@color/neutralDark" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtItemsOrdered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InnerRelativeLayoutOrderDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Items Ordered"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyItemsOrdered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtItemsOrdered"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <TextView
+        android:id="@+id/txtOrderStatusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rcyItemsOrdered"
+        android:layout_centerHorizontal="true"
+        android:text="@string/order_status"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtOrderStatusTitle">
+
+        <TextView
+            android:id="@+id/txtOrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This order was marked as: "
+            android:textColor="@color/neutralDark"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:id="@+id/txtOrderStatusPlaceholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_status"
+            android:layout_toEndOf="@id/txtOrderStatus"
+            android:textColor="@color/neutralDark"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

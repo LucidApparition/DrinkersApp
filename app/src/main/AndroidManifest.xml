@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.drinkersapp"
+    tools:ignore="ExtraText">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    // Ask for the coarse Location
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    //Ask for the permission of the location
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    // Ask for permission to use the phone call app
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DrinkersApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".DriverUIContainer"
+            android:exported="false" />
+        <activity
+            android:name=".DriverEmergency"
+            android:exported="false" />
+        <activity
+            android:name=".DriverMenu"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOwnerUIContainer"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerUIContainer"
+            android:exported="false" />
+        <activity
+            android:name=".StripePayment"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerOrderTrackingPage"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerCheckoutPage"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOwnerSettingsPage"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOwnerViewHistoryPage"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOwnerHistoryPage"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOwnerViewOrderPage"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOwnerAccountPage"
+            android:exported="false" />
+        <activity
+            android:name=".StoreOwnerOrders"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerComparePage"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpPageContinued"
+            android:exported="false"
+            android:theme="@style/Theme.DrinkersApp" />
+        <activity
+            android:name=".SignUpPage"
+            android:exported="false"
+            android:theme="@style/Theme.DrinkersApp" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DrinkersApp">
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+            <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

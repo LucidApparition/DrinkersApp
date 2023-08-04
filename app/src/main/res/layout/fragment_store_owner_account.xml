@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreOwnerAccountFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtYourAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/accent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Your Account"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/InnerRelativeLayoutBtns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtYourAccount"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/btnSaveChanges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/accent"
+                    android:text="@string/save_changes" />
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/btnSaveChanges"
+                    android:textColor="@color/red"
+                    android:text="@string/logout" />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/txtStoreOwnerFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/InnerRelativeLayoutBtns"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="First Name:"
+                android:textColor="@color/neutralDark" />
+
+            <EditText
+                android:id="@+id/edtTxtStoreOwnerFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/InnerRelativeLayoutBtns"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/txtStoreOwnerFirstName"
+                android:hint="@string/customer_name"
+                android:inputType="text"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/neutralDark" />
+
+            <TextView
+                android:id="@+id/txtStoreOwnerMiddleInitial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerFirstName"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="Middle Initial:"
+                android:textColor="@color/neutralDark" />
+
+            <EditText
+                android:id="@+id/edtTxtStoreOwnerMiddleInitial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerFirstName"
+                android:layout_toEndOf="@+id/txtStoreOwnerMiddleInitial"
+                android:hint="@string/customer_name"
+                android:inputType="text"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/neutralDark" />
+
+            <TextView
+                android:id="@+id/txtStoreOwnerLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerMiddleInitial"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="Last Name:"
+                android:textColor="@color/neutralDark" />
+
+            <EditText
+                android:id="@+id/edtTxtStoreOwnerLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerMiddleInitial"
+                android:layout_toEndOf="@+id/txtStoreOwnerLastName"
+                android:hint="@string/customer_name"
+                android:inputType="text"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/neutralDark" />
+
+            <TextView
+                android:id="@+id/txtStoreOwnerDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerLastName"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="Date of Birth:"
+                android:textColor="@color/neutralDark" />
+
+            <EditText
+                android:id="@+id/edtTxtStoreOwnerDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerLastName"
+                android:layout_toEndOf="@+id/txtStoreOwnerDOB"
+                android:hint="@string/customer_dob"
+                android:inputType="date"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/neutralDark" />
+
+            <TextView
+                android:id="@+id/txtStoreOwnerDriversLicense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerDOB"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="Driver's License Number:"
+                android:textColor="@color/neutralDark" />
+
+            <EditText
+                android:id="@+id/edtTxtStoreOwnerDriversLicense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerDOB"
+                android:layout_toEndOf="@+id/txtStoreOwnerDriversLicense"
+                android:hint="@string/customer_license"
+                android:inputType="text"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/neutralDark" />
+
+            <TextView
+                android:id="@+id/txtStoreOwnerLiquorLicense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerDriversLicense"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="Liquor License Number:"
+                android:textColor="@color/neutralDark" />
+
+            <EditText
+                android:id="@+id/edtTxtStoreOwnerLiquorLicense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerDriversLicense"
+                android:layout_toEndOf="@+id/txtStoreOwnerLiquorLicense"
+                android:hint="@string/customer_license"
+                android:inputType="text"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/neutralDark" />
+
+            <TextView
+                android:id="@+id/txtStoreOwnerMailingAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerLiquorLicense"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="Mailing Address:"
+                android:textColor="@color/neutralDark" />
+
+            <EditText
+                android:id="@+id/edtTxtStoreOwnerMailingAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerLiquorLicense"
+                android:layout_toEndOf="@+id/txtStoreOwnerMailingAddress"
+                android:hint="@string/customer_address"
+                android:inputType="textPostalAddress"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/neutralDark" />
+
+            <TextView
+                android:id="@+id/txtStoreOwnerBillingAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerMailingAddress"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="Billing Address:"
+                android:textColor="@color/neutralDark" />
+
+            <EditText
+                android:id="@+id/edtTxtStoreOwnerBillingAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerMailingAddress"
+                android:layout_toEndOf="@+id/txtStoreOwnerBillingAddress"
+                android:hint="@string/customer_address"
+                android:inputType="textPostalAddress"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/neutralDark" />
+
+            <TextView
+                android:id="@+id/txtStoreOwnerStoreAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerBillingAddress"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="Store Address:"
+                android:textColor="@color/neutralDark" />
+
+            <EditText
+                android:id="@+id/edtTxtStoreOwnerStoreAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTxtStoreOwnerBillingAddress"
+                android:layout_toEndOf="@+id/txtStoreOwnerStoreAddress"
+                android:hint="@string/customer_address"
+                android:inputType="textPostalAddress"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/neutralDark" />
+
+            <TextView
+                android:id="@+id/txtInventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtStoreOwnerStoreAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Your Inventory"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyInventory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtInventory" />
+
+        </RelativeLayout>
+</ScrollView>

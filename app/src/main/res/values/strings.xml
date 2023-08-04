@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">DrinkersApp</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="email_hint">example@email.com</string>
+    <string name="password">Password</string>
+    <string name="continue_text">Continue</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_dob">MM/DD/YYYY</string>
+    <string name="customer_license">123456789</string>
+    <string name="customer_address">123 Street Name, City, State, ZIP</string>
+    <string name="order_number">Order Number</string>
+    <string name="driver_name">Driver</string>
+    <string name="order_status">Order Status</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="logout">Logout</string>
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_app_id" translatable="false">909810086914726</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb909810086914726</string>
+    <string name="facebook_client_token">17d39260e460b840219e8f7ecc68cd77</string>
+    // Google
+    <string name="web_client_id">55463983646-htjgpd6idjic9sq2aik3tj1sh8pfehp9.apps.googleusercontent.com</string>
+    // MapBox - Access Token
+    <string name="access_token">pk.eyJ1IjoiY2RwMDQiLCJhIjoiY2xnMW1kd3F6MWlnZTNycDZ0bGZpdXAydSJ9.7TSQqT29TBsQFY4EcaEVfw</string>
+    <string name="start_navigation">Start Navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

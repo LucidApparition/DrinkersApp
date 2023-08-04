@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverEmergency">
+
+    <TextView
+        android:id="@+id/Emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:text="EMERGENCY"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/EmergencyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press this button to call 911"
+        android:layout_below="@id/Emergency"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/EmergencyButton"
+        android:onClick="BtnSetEmergency_onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call 911"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/red"
+        android:layout_below="@id/EmergencyTxt"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>

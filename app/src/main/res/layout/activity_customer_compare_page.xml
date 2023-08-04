@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerComparePage">
+
+    <TextView
+        android:id="@+id/txtCompareTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Compare"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtItemsInYourCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCompareTitle"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Items in your cart"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyItemsInCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtItemsInYourCart"
+        android:layout_marginTop="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="25dp" />
+
+    <TextView
+        android:id="@+id/txtClickAnItemInYourCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rcyItemsInCart"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Click an item in your cart to compare its prices in other stores!"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtItemSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtClickAnItemInYourCart"
+        android:layout_marginTop="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="20dp"
+        android:text="Item selected:" />
+
+    <TextView
+        android:id="@+id/txtItemUserSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtClickAnItemInYourCart"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/txtItemSelected"
+        android:text="Item" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyOtherStorePrices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtItemSelected"
+        android:layout_marginTop="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="20dp" />
+</RelativeLayout>

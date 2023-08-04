@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerOrderTrackingFragment">
+
+    <TextView
+        android:id="@+id/txtTrackingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Track Your Order"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtOrderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTrackingTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Your ordering is currently..."
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtOrderStatusPlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOrderStatus"
+        android:layout_centerHorizontal="true"
+        android:text="@string/order_status"
+        android:textColor="@color/neutralDark"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayoutEstimatedDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrderStatusPlaceholder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/txtEstimatedDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimated Delviery Time:"
+            android:textColor="@color/neutralDark" />
+
+        <TextView
+            android:id="@+id/txtEstimatedDeliveryPlaceholde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/txtEstimatedDelivery"
+            android:text="Time"
+            android:textColor="@color/neutralDark" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtThankYouMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/InnerRelativeLayoutEstimatedDelivery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Thank you for ordering through Drinkers"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

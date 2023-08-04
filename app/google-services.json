@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "55463983646",
+    "project_id": "drinkers-cljc",
+    "storage_bucket": "drinkers-cljc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55463983646:android:56d606defec030576e0c0f",
+        "android_client_info": {
+          "package_name": "com.example.drinkersapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55463983646-m3k4obvped8l4ookj8tov4htrdl1lgo1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuuyHsHdwEp9NMTehtXtuvvXd7GNJyoD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55463983646-htjgpd6idjic9sq2aik3tj1sh8pfehp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

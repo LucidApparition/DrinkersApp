@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreOwnerOrdersFragment">
+
+    <TextView
+        android:id="@+id/txtOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Orders"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayoutBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtOrders">
+
+        <Button
+            android:id="@+id/StartOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start accepting orders"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/green"
+
+            />
+
+        <Button
+            android:id="@+id/StopOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop accepting orders"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@id/StartOrders"
+
+            android:layout_marginStart="10dp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/CurrentUnfulfilledOrdersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lightRed"
+        android:layout_below="@id/InnerRelativeLayoutBtns"
+        android:layout_centerHorizontal="true"
+        android:text="Current unfulfilled orders"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyCurrentUnfulfilledOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/CurrentUnfulfilledOrdersTitle"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/OrdersAwaitingPickupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGreen"
+        android:layout_below="@id/rcyCurrentUnfulfilledOrders"
+        android:layout_centerHorizontal="true"
+        android:text="Orders awaiting pickup"
+        android:textAlignment="center"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyOrdersAwaitingPickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/rcyCurrentUnfulfilledOrders"
+        android:layout_marginTop="40dp"
+        />
+
+</RelativeLayout>

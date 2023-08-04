@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreOwnerHistoryFragment">
+
+
+    <TextView
+        android:id="@+id/txtStoreOwnerHistoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Order History"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStoreOwnerHistoryTitle"
+        android:text="Name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/OrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStoreOwnerHistoryTitle"
+        android:text="Order #"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="135dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStoreOwnerHistoryTitle"
+        android:text="Price"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="230dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/StatusOfOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:layout_below="@+id/txtStoreOwnerHistoryTitle"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="300dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:padding="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

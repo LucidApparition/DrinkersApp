@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".SignUpPageContinued">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="373dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Drinker's logo"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtIWant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/logo"
+        android:text="I want to use this app for..."
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <Button
+            android:id="@+id/btnCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/accent"
+            android:text="Ordering for myself"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCustomer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/accent"
+            android:text="Delivering orders"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnStoreOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDriver"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/accent"
+            android:text="Selling alcohol"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
